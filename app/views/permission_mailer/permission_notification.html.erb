@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+  <h2>Permission Notification</h2>
+  <p>
+    Hello,<br>
+    A new permission has been assigned or updated.
+  </p>
+  <ul>
+    <li><strong>Role:</strong> <%= @permission.role %></li>
+    <li><strong>State:</strong> <%= @permission.state %></li>
+    <li><strong>Action:</strong> <%= @permission.action %></li>
+    <li><strong>Name:</strong> <%= @permission.name %></li>
+  </ul>
+  <p>Thank you!</p>
+</body>
+</html>
