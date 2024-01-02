@@ -75,12 +75,12 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
+  production:
+    url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: employee_ease_production
-  username: employee_ease
-  password: <%= ENV['EMPLOYEE_EASE_DATABASE_PASSWORD'] %>
-  host: localhost
+# production:
+#   <<: *default
+#   database: employee_ease_production
+#   username: employee_ease
+#   password: <%= ENV['EMPLOYEE_EASE_DATABASE_PASSWORD'] %>
+#   host: localhost
