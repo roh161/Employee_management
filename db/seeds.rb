@@ -5,4 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+# Check if the AdminUser table is empty
+if AdminUser.count.zero?
+    # Create an AdminUser only if the table is empty
+    AdminUser.create!(email: 'rohit.salitra07@yopmail.com', password: 'password', password_confirmation: 'password')
+    puts 'AdminUser created!'
+  else
+    puts 'AdminUser already exists.'
+end
