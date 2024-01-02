@@ -83,3 +83,4 @@ production:
   database: employee_ease_production
   username: employee_ease
   password: <%= ENV['EMPLOYEE_EASE_DATABASE_PASSWORD'] %>
+  host: localhost
